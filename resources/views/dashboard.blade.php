@@ -7,7 +7,7 @@
 
     <div class="py-12 flex justify-center gap-6 flex-wrap">
         @foreach(['Anime', 'Games', 'Movies'] as $title)
-            @component('components.category-card', ['cat_title' => $title,'cat_link'=> strtolower($title)])
+            @component('components.category-card', ['cat_title' => $title,'cat_link'=> 'category/'.strtolower($title)])
             @endcomponent
         @endforeach
     </div>
